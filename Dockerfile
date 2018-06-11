@@ -1,7 +1,7 @@
 FROM centos:7.4.1708
 MAINTAINER Alan du
-RUN mkdir /install_ss
-RUN mkdir /var/run/shadowsocks-server
+RUN mkdir /install_ss \
+  && mkdir /var/run/shadowsocks-server
 WORKDIR /install_ss
 COPY shadowsocks_install.sh ./
 RUN chmod +x ./shadowsocks_install.sh && bash ./shadowsocks_install.sh
