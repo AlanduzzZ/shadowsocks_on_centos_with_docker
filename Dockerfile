@@ -1,4 +1,4 @@
-FROM centos:7.4.1708
+FROM centos:7.6.1810
 MAINTAINER Alan du
 RUN mkdir /install_ss \
   && mkdir /var/run/shadowsocks-server
